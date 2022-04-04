@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="header-logo-wrapper">
+        <a href="/" class="header-logo">
+          <img src="/./img/header-logo.svg" alt="TERRALOGIC" width="" height="" />
+        </a>
+      </div>
+      <div class="header-content">
+        <a href="javascript:;" class="content-button" id="content-button" onclick="openSidebar()">
+          <i class="fas fa-bars content-open"></i>
+          <i class="fa-solid fa-xmark content-close"></i>
+        </a>
+        <div class="content-account">
+          <figure class="account-image">
+            <img src="https://picsum.photos/50" alt="PhatXYZ" width="" height="" />
+          </figure>
+          <p class="account-name">PhatXYZ</p>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+    <aside class="sidebar" id="sidebar">
+      <ul class="sidebar-menu">
+        <li class="menu-item"><a href="/"><i class="fa-solid fa-house-chimney"></i> Dashboard</a></li>
+        <li class="menu-item"><a href="/"><i class="far fa-envelope"></i> Email</a></li>
+        <li class="menu-item"><a href="/"><i class="fa-solid fa-book"></i>Compose</a></li>
+        <li class="menu-item"><a href="/"><i class="far fa-calendar-alt"></i> Calendar</a></li>
+        <li class="menu-item"><a href="/"><i class="far fa-comment"></i> Chat</a></li>
+        <li class="menu-item"><a href="/"><i class="far fa-chart-bar"></i> Charts</a></li>
+        <li class="menu-item"><a href="javascript:;" class="menu-item-submenu" onclick="openSubmenu()" id="menu-item-submenu"><i class="fa-solid fa-pencil"></i> Forms</a>
+          <ul class="sidebar-submenu" id="sidebar-submenu">
+            <li class="submenu-item">
+              <a href="/">Test 1</a>
+            </li>
+            <li class="submenu-item">
+              <a href="/">Test 1</a>
+            </li>
+            <li class="submenu-item">
+              <a href="/">Test 1</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="/"><i class="fa-solid fa-table"></i> Tables</a></li>
+        <li class="menu-item"><a href="/"><i class="fa-regular fa-map"></i> Maps</a></li>
+        <li class="menu-item"><a href="/"><i class="fa-regular fa-file"></i> Pages</a></li>
+      </ul>
+    </aside>
+    <div class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur at maxime nemo cumque mollitia reiciendis ducimus architecto accusantium? Fugiat alias ipsa reprehenderit beatae quod tempore quibusdam esse ratione inventore vero nesciunt est, eaque ex laboriosam adipisci officia laudantium facere dolore at quia. Nisi fuga maxime nostrum quibusdam, quasi repellat iure doloremque corporis reprehenderit excepturi sunt qui nemo rerum perferendis doloribus molestias tempora veniam ratione deserunt quis sit voluptas sequi ipsa asperiores. Doloribus eaque magnam dolores qui aliquid corrupti adipisci expedita consectetur dicta totam soluta modi vitae ipsa sit, neque quo dignissimos placeat laborum quia provident ratione. Qui, tempora non!
+    </div>
+  </div>
+  </div>
+  <script>
+    function openSubmenu(){
+      document.getElementById("sidebar-submenu").classList.toggle("active");
+      document.getElementById("menu-item-submenu").classList.toggle("active");
+    }
+    function openSidebar(){
+      document.getElementById("sidebar").classList.toggle("active");
+      document.getElementById("content-button").classList.toggle("active");
+    }
+    window.onclick = function(event) {
+  if (!event.target.matches('.menu-item-submenu')) {
+    var dropdowns = document.getElementsByClassName("sidebar-submenu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('active')) {
+        openDropdown.classList.remove('active');
+      }
+    }
+  }
+}
+  </script>
+  <script src="https://kit.fontawesome.com/4e92569230.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
