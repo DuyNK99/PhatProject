@@ -22,67 +22,94 @@
           <i class="fas fa-bars content-open"></i>
           <i class="fa-solid fa-xmark content-close"></i>
         </a>
-        <div class="content-account">
-          <figure class="account-image">
-            <img src="https://picsum.photos/50" alt="PhatXYZ" width="" height="" />
-          </figure>
-          <p class="account-name">PhatXYZ</p>
+        <!-- Updated code -->
+        <div class="content-account-wrapper">
+          <a href="javasript:;" class="content-account">
+            <figure class="account-image">
+              <img src="https://picsum.photos/50" alt="PhatXYZ" width="" height="" />
+            </figure>
+            <p class="account-name">PhatXYZ</p>
+          </a>
+          <div class="content-account-dropdown">
+            <a href="/">Log Out</a>
+          </div>
         </div>
+        <!-- Updated code -->
       </div>
     </header>
     <div class="main-content">
-    <aside class="sidebar" id="sidebar">
-      <ul class="sidebar-menu">
-        <li class="menu-item"><a href="/"><i class="fa-solid fa-house-chimney"></i> Dashboard</a></li>
-        <li class="menu-item"><a href="/"><i class="far fa-envelope"></i> Email</a></li>
-        <li class="menu-item"><a href="/"><i class="fa-solid fa-book"></i>Compose</a></li>
-        <li class="menu-item"><a href="/"><i class="far fa-calendar-alt"></i> Calendar</a></li>
-        <li class="menu-item"><a href="/"><i class="far fa-comment"></i> Chat</a></li>
-        <li class="menu-item"><a href="/"><i class="far fa-chart-bar"></i> Charts</a></li>
-        <li class="menu-item"><a href="javascript:;" class="menu-item-submenu" onclick="openSubmenu()" id="menu-item-submenu"><i class="fa-solid fa-pencil"></i> Forms</a>
-          <ul class="sidebar-submenu" id="sidebar-submenu">
-            <li class="submenu-item">
-              <a href="/">Test 1</a>
-            </li>
-            <li class="submenu-item">
-              <a href="/">Test 1</a>
-            </li>
-            <li class="submenu-item">
-              <a href="/">Test 1</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item"><a href="/"><i class="fa-solid fa-table"></i> Tables</a></li>
-        <li class="menu-item"><a href="/"><i class="fa-regular fa-map"></i> Maps</a></li>
-        <li class="menu-item"><a href="/"><i class="fa-regular fa-file"></i> Pages</a></li>
-      </ul>
-    </aside>
-    <div class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur at maxime nemo cumque mollitia reiciendis ducimus architecto accusantium? Fugiat alias ipsa reprehenderit beatae quod tempore quibusdam esse ratione inventore vero nesciunt est, eaque ex laboriosam adipisci officia laudantium facere dolore at quia. Nisi fuga maxime nostrum quibusdam, quasi repellat iure doloremque corporis reprehenderit excepturi sunt qui nemo rerum perferendis doloribus molestias tempora veniam ratione deserunt quis sit voluptas sequi ipsa asperiores. Doloribus eaque magnam dolores qui aliquid corrupti adipisci expedita consectetur dicta totam soluta modi vitae ipsa sit, neque quo dignissimos placeat laborum quia provident ratione. Qui, tempora non!
+      <aside class="sidebar" id="sidebar">
+        <ul class="sidebar-menu">
+          <li class="menu-item"><a href="/"><i class="fa-solid fa-house-chimney"></i> Dashboard</a></li>
+          <li class="menu-item"><a href="/"><i class="far fa-envelope"></i> Email</a></li>
+          <li class="menu-item"><a href="/"><i class="fa-solid fa-book"></i>Compose</a></li>
+          <li class="menu-item"><a href="/"><i class="far fa-calendar-alt"></i> Calendar</a></li>
+          <li class="menu-item"><a href="/"><i class="far fa-comment"></i> Chat</a></li>
+          <li class="menu-item"><a href="/"><i class="far fa-chart-bar"></i> Charts</a></li>
+          <li class="menu-item"><a href="javascript:;" class="menu-item-submenu" onclick="openSubmenu()"
+              id="menu-item-submenu"><i class="fa-solid fa-pencil"></i> Forms</a>
+            <ul class="sidebar-submenu" id="sidebar-submenu">
+              <li class="submenu-item">
+                <a href="/">Test 1</a>
+              </li>
+              <li class="submenu-item">
+                <a href="/">Test 1</a>
+              </li>
+              <li class="submenu-item">
+                <a href="/">Test 1</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="/"><i class="fa-solid fa-table"></i> Tables</a></li>
+          <li class="menu-item"><a href="/"><i class="fa-regular fa-map"></i> Maps</a></li>
+          <li class="menu-item"><a href="/"><i class="fa-regular fa-file"></i> Pages</a></li>
+        </ul>
+        <!-- Updated code -->
+        <div class="content-account-mobile">
+          <a href="javasript:;" class="content-account">
+            <figure class="account-image">
+              <img src="https://picsum.photos/50" alt="PhatXYZ" width="" height="" />
+            </figure>
+            <p class="account-name">PhatXYZ</p>
+          </a>
+          <div class="content-account-dropdown">
+            <a href="/">Log Out</a>
+          </div>
+        </div>
+        <!-- Updated code -->
+      </aside>
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur at maxime nemo cumque mollitia
+        reiciendis ducimus architecto accusantium? Fugiat alias ipsa reprehenderit beatae quod tempore quibusdam esse
+        ratione inventore vero nesciunt est, eaque ex laboriosam adipisci officia laudantium facere dolore at quia. Nisi
+        fuga maxime nostrum quibusdam, quasi repellat iure doloremque corporis reprehenderit excepturi sunt qui nemo
+        rerum perferendis doloribus molestias tempora veniam ratione deserunt quis sit voluptas sequi ipsa asperiores.
+        Doloribus eaque magnam dolores qui aliquid corrupti adipisci expedita consectetur dicta totam soluta modi vitae
+        ipsa sit, neque quo dignissimos placeat laborum quia provident ratione. Qui, tempora non!
+      </div>
     </div>
   </div>
-  </div>
   <script>
-    function openSubmenu(){
+    function openSubmenu() {
       document.getElementById("sidebar-submenu").classList.toggle("active");
       document.getElementById("menu-item-submenu").classList.toggle("active");
     }
-    function openSidebar(){
+    function openSidebar() {
       document.getElementById("sidebar").classList.toggle("active");
       document.getElementById("content-button").classList.toggle("active");
     }
-    window.onclick = function(event) {
-  if (!event.target.matches('.menu-item-submenu')) {
-    var dropdowns = document.getElementsByClassName("sidebar-submenu");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('active')) {
-        openDropdown.classList.remove('active');
+    window.onclick = function (event) {
+      if (!event.target.matches('.menu-item-submenu')) {
+        var dropdowns = document.getElementsByClassName("sidebar-submenu");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('active')) {
+            openDropdown.classList.remove('active');
+          }
+        }
       }
     }
-  }
-}
   </script>
   <script src="https://kit.fontawesome.com/4e92569230.js" crossorigin="anonymous"></script>
 </body>
